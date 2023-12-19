@@ -55,7 +55,7 @@ resource "kubernetes_deployment" "hello_world_deployment" {
       }
       spec {
         container {
-          image = "myregistryterra.azurecr.io/kube-nginx-acr:latest"
+          image = "myregistryterra.azurecr.io/nginx-acr:latest"
           name  = "hello-world"
         }
       }
