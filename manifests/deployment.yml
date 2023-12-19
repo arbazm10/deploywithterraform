@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: myregistryterraazurecriokubenginxacrlatest 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myregistryterraazurecriokubenginxacrlatest
+  template:
+    metadata:
+      labels:
+        app: myregistryterraazurecriokubenginxacrlatest 
+    spec:
+      containers:
+        - name: myregistryterraazurecriokubenginxacrlatest 
+          image: myregistryterra.azurecr.io/myregistryterraazurecriokubenginxacrlatest
+          ports:
+          - containerPort: 80
