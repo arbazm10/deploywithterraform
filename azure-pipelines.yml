@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '0484995d-9bd3-4faa-8644-28a32b7990b4'
-  imageRepository: 'myregistryterraazurecriokubenginxacrlatest'
+  imageRepository: 'stacksimplify/kube-nginxapp1:1.0.0'
   containerRegistry: 'myregistryterra.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
